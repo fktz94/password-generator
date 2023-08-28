@@ -13,7 +13,6 @@
   outline: none;
   box-shadow: 0 0 0 0 rgb(52 211 153 0.1);
   transition: 0.2s ease-out;
-  /* box-shadow: -407px 0 0 400px rgb(52 211 153); */
 }
 .input-range::-webkit-slider-thumb:hover {
   box-shadow: 0 0 20px 5px rgba(52, 211, 153, 0.1);
@@ -30,4 +29,27 @@
   font-weight: 900;
   left: 2px;
   transform: translateY(-48%);
+}
+
+.copy-icon {
+  cursor: pointer;
+}
+.copy-icon:hover {
+  opacity: 50%;
+}
+
+.copy-icon:active {
+  opacity: 25%;
+}
+
+.copy-text::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 30px;
+  rotate: 45deg;
+
+  background-color: inherit;
 }

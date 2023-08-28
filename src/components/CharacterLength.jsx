@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { PasswordContext } from '../context/PasswordContext';
 
 export default function CharacterLength() {
@@ -6,7 +6,7 @@ export default function CharacterLength() {
 
   // porcentaje específico para éste input range: min=5 y diferencia con el máximo=15 (para calcular porcentaje)
   const value = ((charLength - 5) * 100) / 15;
-
+  // estilo para el porcentaje completado del input range
   const bgStyle = `linear-gradient(90deg, rgba(52, 211, 153, 0.8)  ${value}%, rgb(23, 23, 23) ${value}%)`;
 
   return (
